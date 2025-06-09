@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 30px;
+}
+
+.square {
+  width: 30px;
+  height: 30px;
+  background-color: rgb(255, 255, 255);
+  /* flex-basis: calc(100% / 16); */
+}
+
+.grid {
+  display: flex;
+  /* gap: 1px; */
+  flex-wrap: wrap;
+  width: 480px;
+  margin: auto;
+  box-shadow: 1px 1px 7px rgb(135, 135, 135);
+}
+
+h1 {
+  font-family: "Courier New", Courier, monospace;
+  color: rgb(51, 51, 51);
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 50px;
+}
