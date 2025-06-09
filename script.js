@@ -1,15 +1,32 @@
 "use strict";
 
-const grid = document.querySelector(".grid");
+let color = "";
+const container = document.querySelector(".container");
 
-// let div = document.createElement("div");
-for (let i = 0; i < 16 * 16; i++) {
-  const div = document.createElement("div");
-  div.setAttribute("class", "square");
-  grid.appendChild(div);
-  div.addEventListener("mouseenter", () => {
-    div.setAttribute("style", "background-color: black");
-  });
+const button = document.querySelector("button");
+
+function colorSquare() {
+  this.style.backgroundColor = color;
 }
 
-console.log(grid);
+function changeColor(choice) {
+  color = choice;
+}
+
+button.addEventListener("click", () => {
+  let square = container.querySelectorAll("div");
+  square.forEach((div) => div.remove());
+  const answer = prompt("Write the number of cubes", "");
+  if (answer <= 100) {
+    for (let i = 0; i < +answer * +answer; i++) {
+      const square = document.createElement("div");
+      square.setAttribute("class", "square");
+      square.setAttribute(
+        "style",
+        `width: ${400 / +answer}px; height: ${400 / +answer}px`
+      );
+      container.appendChild(square);
+      square.addEventListener("mouseover", colorSquare);
+    }
+  } else alert("ERROR! Number too big");
+});

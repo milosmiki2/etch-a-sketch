@@ -5,29 +5,58 @@
 }
 
 body {
-  margin: 30px;
-}
-
-.square {
-  width: 30px;
-  height: 30px;
   background-color: rgb(255, 255, 255);
-  /* flex-basis: calc(100% / 16); */
 }
 
-.grid {
+/* .square {
+  background-color: rgb(234, 80, 80);
+} */
+
+.container {
   display: flex;
-  /* gap: 1px; */
+  width: 400px;
+  height: 400px;
   flex-wrap: wrap;
-  width: 480px;
+  box-shadow: 1px 1px 4px rgb(144, 144, 144);
   margin: auto;
-  box-shadow: 1px 1px 7px rgb(135, 135, 135);
+  background-color: white;
 }
 
-h1 {
+button {
+  background-color: rgb(167, 255, 167);
+  border: none;
+  box-shadow: 1px 1px 2px 2px rgb(159, 159, 159);
+  padding: 10px 20px;
+  font-size: 20px;
   font-family: "Courier New", Courier, monospace;
-  color: rgb(51, 51, 51);
-  font-size: 50px;
+}
+
+button:active {
+  box-shadow: 1px 1px 1px 1px rgb(159, 159, 159);
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+.red {
+  background-color: rgb(255, 116, 116);
+}
+.blue {
+  background-color: rgb(87, 107, 255);
+}
+
+.size {
+  display: flex;
+  gap: 10px;
+  font-size: 15px;
+  padding: 8px 16px;
+}
+h1 {
+  margin-bottom: 60px;
+  margin-top: 30px;
   text-align: center;
-  margin-bottom: 50px;
+  font-family: "Courier New", Courier, monospace;
 }

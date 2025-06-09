@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>Etch-a-Sketch</h1>
+    <div class="button">
+      <button>Square Size</button>
+      <div class="size">
+        <button class="red" onclick="changeColor('rgb(255, 116, 116)')">
+          Red
+        </button>
+        <button class="blue" onclick="changeColor(`rgb(87, 107, 255)`)">
+          Blue
+        </button>
+        <button class="green" onclick="changeColor('rgb(167, 255, 167)')">
+          Green
+        </button>
+      </div>
+    </div>
+
+    <div class="container"></div>
+  </body>
+</html>
